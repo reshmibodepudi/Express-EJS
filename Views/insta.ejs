@@ -1,0 +1,12 @@
+<%- include("includes/head.ejs")  %>
+<body>
+    <h2>Welcome to @<%= user %>'s insta page!</h2>
+    <button>Follow</button>
+    <button>Message</button>
+    <h4>Accounts that follow <%=user%> are: </h4>
+    <ul>
+    <% for(let name of followers){%>
+    <li> <%= name%> </li> <% } %>
+    </ul>
+</body>
+</html>
